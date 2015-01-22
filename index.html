@@ -21,12 +21,12 @@
   <script src="./lib/bullet.js"></script>
   <script src="./keymaster.js"></script>
   <script>
-  var canvasEl = document.getElementsByTagName("canvas")[0];
-  canvasEl.height = window.innerHeight;
-  canvasEl.width = window.innerWidth;
-  var game = new Asteroids.Game(canvasEl.height, canvasEl.width);
-  var gameview = new Asteroids.GameView(game, canvasEl.getContext("2d"));
-  gameview.start();
+    var canvasEl = document.getElementsByTagName("canvas")[0];
+    canvasEl.height = window.innerHeight;
+    canvasEl.width = window.innerWidth;
+    var game = new Asteroids.Game(canvasEl.height, canvasEl.width);
+    var gameview = new Asteroids.GameView(game, canvasEl.getContext("2d"));
+    gameview.start();
   </script>
 </body>
 </html>
