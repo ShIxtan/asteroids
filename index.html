@@ -3,14 +3,20 @@
   <title>Asteroids</title>
 
   <style>
-  html, body, canvas {
-    padding: 0px;
-    margin: 0px;
-  }
+    html, body, canvas {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    img {
+      display: none;
+    }
   </style>
 
 </head>
 <body>
+  <img src="./ship.jpg" alt="" id="ship"/>
+  <img src="./smallAsteroid.jpg" alt="" id="small-asteroid"/>
   <canvas></canvas>
   <script src="./lib/movingObject.js"></script>
   <script src="./lib/utils.js"></script>
@@ -19,7 +25,7 @@
   <script src="./lib/gameView.js"></script>
   <script src="./lib/ship.js"></script>
   <script src="./lib/bullet.js"></script>
-  <script src="./keymaster.js"></script>
+  <script src="./lib/keymaster.js"></script>
   <script>
     var canvasEl = document.getElementsByTagName("canvas")[0];
     canvasEl.height = window.innerHeight;
